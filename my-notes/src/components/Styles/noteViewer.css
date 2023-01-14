@@ -1,0 +1,77 @@
+.paperCover {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: #000000ab;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.paper {
+    background: whitesmoke;
+    width: 30vw;
+    height: 89vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-left-style: dotted;
+}
+
+.contextOfNoteViewer {
+    overflow: scroll;
+}
+
+.contextOfNoteViewer::-webkit-scrollbar {
+    display: none;
+}
+
+
+.categoriesOfNoteViewer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.alignment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.alignText {
+    border: none;
+    background: #00b5ff;
+    border-radius: 5px;
+    width: 25%;
+}
+
+
+.noteViewerComplexHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.cutButtonOfNoteViewer {
+    width: 100%;
+    text-align: right;
+}
+
+
+@media screen and (max-width:414px) {
+    .paper {
+        width: 90vw;
+    }
+}

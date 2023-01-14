@@ -1,0 +1,119 @@
+.outerLayerOfNote {
+    background: lightcoral;
+    width: 13rem;
+    height: 9rem;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+}
+
+.tag {
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+.text {
+    cursor: pointer;
+}
+
+
+.lowerPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upperPart {
+    overflow: scroll;
+}
+
+.upperPart::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width:414px) {
+
+    .outerLayerOfNote {
+        width: 9rem;
+        height: 7rem;
+    }
+}
+
+
+
+
+
+/* Deletion Model */
+.upperLayerOfDeletionPage {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.profileOptionContainerOfDeletionPage {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    width: 30vw;
+    height: 30vh;
+}
+
+.deletionOption {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.insideUpperLayerOfDeletionPage {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.deletionHeader {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+.profileModelCutOfDeletionPage {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+
+.deletionBtn {
+    border: none;
+    width: 6rem;
+    background: lightseagreen;
+    border-radius: 4px;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:414px) {
+
+    .profileOptionContainerOfDeletionPage {
+        width: 90vw;
+    }
+}

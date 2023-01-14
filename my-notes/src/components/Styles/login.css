@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.LoginBox {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  background: #d6d6d6;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerBox {
+  width: 32vw;
+  height: 74vh;
+  border-radius: 10px;
+  background: #1ff77cbd;
+  border: black 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+#userName,
+#password {
+  display: block;
+  width: 20vw;
+  height: 3.5vh;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: red; */
+  width: 22vw;
+  height: 25vh;
+}
+
+.ID {
+  width: 7vw;
+  height: 6vh;
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.loggingButton {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.innerLoggingButton {
+  text-align: right;
+  width: 100%;
+  color: #660066;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.otherOptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  width: 41%;
+  padding: 1rem;
+}
+
+i {
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+u {
+  cursor: pointer;
+}
+
+/* @media screen and(min-width:475px) and (max-width: 912px) { */
+@media screen and (max-width: 914px) {
+  .innerBox {
+    width: 91vw;
+  }
+
+  #userName,
+  #password {
+    width: 73vw;
+    height: 4.5vh;
+  }
+
+  .ID {
+    width: 28vw;
+    font-size: 1.9rem;
+  }
+
+  .loggingButton {
+    width: 84vw;
+    font-size: 2rem;
+  }
+
+  .details {
+    font-size: 1.9rem;
+  }
+
+  i {
+    font-size: 3rem;
+  }
+
+  .formality {
+    font-size: 1.6rem;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .innerBox {
+    width: 91vw;
+  }
+
+  #userName,
+  #password {
+    width: 73vw;
+    height: 4.5vh;
+  }
+
+  .ID {
+    width: 28vw;
+  }
+
+  .loggingButton {
+    width: 84vw;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+
+  .formality,
+  .loginHeadingText {
+    font-size: 1.4rem;
+  }
+
+
+}

@@ -1,0 +1,82 @@
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upperLayer {
+    background-color: #0000005e;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profileModelCut {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.profileOptionContainer {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    width: 30vw;
+    height: 30vh;
+}
+
+.btnOfChangeDP {
+    border: none;
+    color: #3434f4;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.profileInnerOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.profileOptionsHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid #afa1a1;
+}
+
+
+
+@media screen and (max-width:414px) {
+    .profileOptionContainer {
+        width: 90vw;
+    }
+}

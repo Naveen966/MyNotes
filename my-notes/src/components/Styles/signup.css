@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 89vh;
+  background: #d6d6d6;
+}
+
+.allInputs {
+  width: 65vw;
+  height: 67vh;
+  background: #1ff77cbd;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 6px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+.innerBoxData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.inputs {
+  border: none;
+  width: 58%;
+  height: 4vh;
+  border-radius: 5px;
+}
+
+.formsName {
+  width: 58%;
+  display: flex;
+  justify-content: center;
+}
+
+/* media queries */
+
+@media screen and (max-width: 912px) {
+  .allInputs {
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .formsName {
+    width: 58%;
+    display: block;
+  }
+
+  .nameOfForm {
+    font-size: 1.8rem;
+  }
+
+  .Formality2nd {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .allInputs {
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .formsName {
+    width: 58%;
+    display: block;
+  }
+
+  .nameOfForm {
+    font-size: 0.8rem;
+  }
+
+  .Formality2nd {
+    font-size: 1rem;
+  }
+}
