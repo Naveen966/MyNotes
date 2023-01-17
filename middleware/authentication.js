@@ -1,7 +1,5 @@
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
-const UserData = require("../models/User");
-const jwtSecret = process.env.SECRET_KEY;
 
 const fetchUser = async (req, res, next) => {
   const token = req.header("auth-token");
@@ -11,7 +9,7 @@ const fetchUser = async (req, res, next) => {
   }
 
   try {
-    const data = await jwt.verify(token, jwtSecret);
+    const data = await jwt.verify(token, process.env.SECRET_KEY);
     // logged-in user all data is in below 'req.authUser' called variable.
     req.authUser = data._id;
     // console.log(req.authUser);
