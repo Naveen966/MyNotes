@@ -15,17 +15,10 @@ app.use("/api/notes/", require("./routes/notes"));
 
 app.use(express.static(path.join(__dirname, "./my-notes/build")));
 
-console.log(path.join(__dirname, "./my-notes/build/index.html"));
+// console.log(path.join(__dirname, "./my-notes/build/index.html"));
 
-app.get("*", async (req, res) => {
-  res.sendFile(
-    path.join(__dirname, "./my-notes/build/index.html"),
-    function (error) {
-      res.status(500).send(error);
-    }
-  );
-
-  res.sendFile();
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./my-notes/build/index.html"));
 });
 
 app.listen(PORT, () => {
