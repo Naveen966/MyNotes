@@ -2,7 +2,7 @@ require("dotenv").config();
 const cors = require("cors");
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 const connection = require("./db");
 const path = require("path");
 
@@ -15,13 +15,17 @@ app.use("/api/notes/", require("./routes/notes"));
 
 app.use(express.static(path.join(__dirname, "./my-notes/build")));
 
-app.get("*", (req, res) => {
+console.log(path.join(__dirname, "./my-notes/build/index.html"));
+
+app.get("*", async (req, res) => {
   res.sendFile(
     path.join(__dirname, "./my-notes/build/index.html"),
-    function (err) {
-      res.status(500).json(err);
+    function (error) {
+      res.status(500).send(error);
     }
   );
+
+  res.sendFile();
 });
 
 app.listen(PORT, () => {
