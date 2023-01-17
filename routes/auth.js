@@ -6,8 +6,6 @@ const jwt = require("jsonwebtoken");
 const { body, validationResult } = require("express-validator");
 const authenticate = require("../middleware/authentication");
 
-const jwtSecret = process.env.SECRET_KEY;
-
 const validation = [
   body("phoneNumber", "The password must have 10 digits").isLength(10),
   body("email", "The Email must be valid").isEmail(),
@@ -46,7 +44,10 @@ router.post("/signup", validation, async (req, res) => {
           password: hashPassword,
         });
 
-        const jwt_sign = jwt.sign({ _id: authenticateUser._id }, jwtSecret);
+        const jwt_sign = jwt.sign(
+          { _id: authenticateUser._id },
+          process.env.SECRET_KEY
+        );
         await authenticateUser.save();
         if (jwt_sign) {
           return res
@@ -87,7 +88,10 @@ router.post(
         return res.json({ error: "Sorry! Recheck your credentials" });
       } else {
         // jwt authentication
-        const jwt_sign = jwt.sign({ _id: authenticateUser._id }, jwtSecret);
+        const jwt_sign = jwt.sign(
+          { _id: authenticateUser._id },
+          process.env.SECRET_KEY
+        );
         if (jwt_sign)
           return res
             .json({ success: jwt_sign, msg: "Logged-in Successfully" })
