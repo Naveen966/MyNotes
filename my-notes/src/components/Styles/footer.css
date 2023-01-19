@@ -33,28 +33,11 @@
 }
 
 
-@media screen and (max-width: 414px) {
-
-
-    .footerBody {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: palegoldenrod;
-        height: 4vh;
-        position: absolute;
-        width: 100vw;
-        bottom: 0;
-    }
+@media screen and (max-width: 1024px) {
 
 
     .footerInnerBody {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0.49rem;
-        width: calc(100% - 600px);
-        height: 3vh;
+        width: 100vw;
     }
 
 }

@@ -4,10 +4,7 @@ import "../Styles/footer.css";
 const Footer = () => {
   return (
     <>
-      <div
-        className="footerBody"
-        style={{ position: "absolute", bottom: "0", width: "100vw" }}
-      >
+      <div className="footerBody">
         <div className="footerInnerBody">
           <h4>Report Error</h4>
           <h4>Suggestion</h4>
