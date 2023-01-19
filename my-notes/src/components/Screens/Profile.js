@@ -61,7 +61,9 @@ const ProfilePage = (prop) => {
               close
             </span>
           </div>
-          <h1 style={{ fontSize: "2rem" }}>Update Profile Photo</h1>
+          <h1 style={{ fontSize: "2rem", textAlign: "center" }}>
+            Update Profile Photo
+          </h1>
           <div className="profileInnerOption">
             <div className="profileOptionsHead">
               <button className="btnOfChangeDP" onClick={displayImage}>
