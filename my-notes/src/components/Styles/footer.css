@@ -4,7 +4,7 @@
     align-items: center;
     background-color: palegoldenrod;
     height: 4vh;
-    position: sticky;
+    position: static;
     width: 100vw;
     bottom: 0;
     width: 100%;
