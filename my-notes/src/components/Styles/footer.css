@@ -4,9 +4,10 @@
     align-items: center;
     background-color: palegoldenrod;
     height: 4vh;
-    position: absolute;
+    position: sticky;
     width: 100vw;
     bottom: 0;
+    width: 100%;
 }
 
 
@@ -22,16 +23,6 @@
 .footerInnerBody h4 {
     font-size: 1rem;
 }
-
-@media screen and (max-width: 1024px) {
-
-
-    .footerInnerBody {
-        width: 100vw;
-    }
-
-}
-
 
 @media screen and (max-width: 1024px) {
 

@@ -5,6 +5,7 @@
      background-color: aquamarine;
      border-radius: 20px;
      transition: 0.4s ease-in;
+     z-index: 3;
  }
 
  .innerDataEntryPage {

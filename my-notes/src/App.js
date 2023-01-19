@@ -48,9 +48,9 @@ function App() {
           </Routes>
           <DataEntry opacityOfDataPage={opacity} displayProperty={display} />
         </div>
-        <Footer />
         <ToastContainer />
       </div>
+      <Footer />
     </>
   );
 }
